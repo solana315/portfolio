@@ -29,7 +29,7 @@ export default function Header({ onLogout }) {
 					<span className="navbar-toggler-icon" />
 				</button>
 				<div className="collapse navbar-collapse" id="mainNav">
-					<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+					<ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
 						<li className="nav-item">
 							<a className="nav-link" href="/">
 								Início
@@ -51,7 +51,7 @@ export default function Header({ onLogout }) {
 							</a>
 						</li>
 						{onLogout ? (
-							<li className="nav-item ms-lg-3">
+							<li className="nav-item ms-lg-3 d-flex align-items-center">
 								<button
 									type="button"
 									className="btn btn-outline-primary btn-sm"
