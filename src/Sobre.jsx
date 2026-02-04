@@ -28,7 +28,7 @@ export default function Sobre() {
 							<div className="col-12 col-lg-6 d-flex">
 								<div className="d-flex flex-column justify-content-center">
 								<h1 className="fw-bold display-4 text-dark mb-3">
-									Sobre o meu percurso a
+									Sobre o meu percurso
 								</h1>
 								<p className="text-muted mb-0">
 									Sou a Ana Oliveira tenho {age} anos, cursei <strong>Tecnologias e Design Multimédia</strong> no
