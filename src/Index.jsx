@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./components/Header";
 
-export default function Index() {
+export default function Index({ onLogout }) {
 	return (
 		<div className="bg-primary-subtle min-vh-100 d-flex flex-column overflow-hidden">
-			<Header />
+			<Header onLogout={onLogout} />
 
 			<main className="flex-grow-1 d-flex align-items-center justify-content-center overflow-hidden py-4" id="home">
 				<div className="container-fluid px-4 px-lg-5 h-100 d-flex align-items-center justify-content-center">

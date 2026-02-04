@@ -1,7 +1,7 @@
 import React from "react";
 import profileImg from "../assets/img.jpeg";
 
-export default function Header() {
+export default function Header({ onLogout }) {
 	return (
 		<header className="bg-white border-bottom">
 			<nav className="navbar navbar-expand-lg container py-3">
@@ -50,6 +50,17 @@ export default function Header() {
 								Contato
 							</a>
 						</li>
+						{onLogout ? (
+							<li className="nav-item ms-lg-3">
+								<button
+									type="button"
+									className="btn btn-outline-primary btn-sm"
+									onClick={onLogout}
+								>
+									Sair
+								</button>
+							</li>
+						) : null}
 					</ul>
 				</div>
 			</nav>

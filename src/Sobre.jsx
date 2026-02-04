@@ -3,7 +3,7 @@ import profileImg from "./assets/img2.jpeg";
 import clipImg from "./assets/clip.png";
 import Header from "./components/Header";
 
-export default function Sobre() {
+export default function Sobre({ onLogout }) {
 	const birthDate = new Date(2005, 0, 3);
 	const today = new Date();
 	let age = today.getFullYear() - birthDate.getFullYear();
@@ -17,7 +17,7 @@ export default function Sobre() {
 
 	return (
 		<div className="bg-primary-subtle min-vh-100 d-flex flex-column overflow-hidden">
-			<Header />
+			<Header onLogout={onLogout} />
 			<main className="flex-grow-1 d-flex align-items-center justify-content-center overflow-hidden py-4">
 				<div className="container-fluid px-4 px-lg-5 h-100 d-flex align-items-center justify-content-center">
 					<div
